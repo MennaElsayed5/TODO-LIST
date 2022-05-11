@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E03433B27FC3F9500674437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E03433A27FC3F9500674437 /* AppDelegate.m */; };
 		3E03433E27FC3F9500674437 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E03433D27FC3F9500674437 /* SceneDelegate.m */; };
-		3E03434127FC3F9500674437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E03434027FC3F9500674437 /* ViewController.m */; };
 		3E03434427FC3F9500674437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E03434227FC3F9500674437 /* Main.storyboard */; };
 		3E03434627FC3F9700674437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E03434527FC3F9700674437 /* Assets.xcassets */; };
 		3E03434927FC3F9700674437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E03434727FC3F9700674437 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		3E03435A27FC4B7C00674437 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E03435927FC4B7C00674437 /* TableViewController.m */; };
 		3E03435D27FC589100674437 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E03435C27FC589100674437 /* Tasks.m */; };
 		3EABBA4E27FDC4B700FF8322 /* ProgressDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EABBA4D27FDC4B700FF8322 /* ProgressDetailsViewController.m */; };
+		3EDBAB30282BFA0500608680 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBAB2F282BFA0500608680 /* ViewController.m */; };
 		3EF39B8527FCDDEA00171347 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF39B8427FCDDEA00171347 /* DetailsViewController.m */; };
 		3EF39B8827FD0E3600171347 /* DoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF39B8727FD0E3600171347 /* DoneTableViewController.m */; };
 		3EF39B8B27FD0E4B00171347 /* ProgressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF39B8A27FD0E4B00171347 /* ProgressTableViewController.m */; };
@@ -29,8 +29,6 @@
 		3E03433A27FC3F9500674437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E03433C27FC3F9500674437 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		3E03433D27FC3F9500674437 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		3E03433F27FC3F9500674437 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E03434027FC3F9500674437 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3E03434327FC3F9500674437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E03434527FC3F9700674437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E03434827FC3F9700674437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +42,8 @@
 		3E03435C27FC589100674437 /* Tasks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 		3EABBA4C27FDC4B700FF8322 /* ProgressDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressDetailsViewController.h; sourceTree = "<group>"; };
 		3EABBA4D27FDC4B700FF8322 /* ProgressDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressDetailsViewController.m; sourceTree = "<group>"; };
+		3EDBAB2E282BFA0500608680 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3EDBAB2F282BFA0500608680 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3EF39B8327FCDDEA00171347 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		3EF39B8427FCDDEA00171347 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		3EF39B8627FD0E3600171347 /* DoneTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoneTableViewController.h; sourceTree = "<group>"; };
@@ -82,33 +82,97 @@
 		3E03433827FC3F9500674437 /* todoList */ = {
 			isa = PBXGroup;
 			children = (
+				3EDBAB25282BF8CF00608680 /* Controlers */,
+				3EDBAB24282BF8C900608680 /* View */,
+				3EDBAB23282BF8C300608680 /* Model */,
 				3E03433927FC3F9500674437 /* AppDelegate.h */,
 				3E03433A27FC3F9500674437 /* AppDelegate.m */,
 				3E03433C27FC3F9500674437 /* SceneDelegate.h */,
 				3E03433D27FC3F9500674437 /* SceneDelegate.m */,
-				3E03433F27FC3F9500674437 /* ViewController.h */,
-				3E03434027FC3F9500674437 /* ViewController.m */,
+				3E03434A27FC3F9700674437 /* Info.plist */,
+				3E03434B27FC3F9700674437 /* main.m */,
+			);
+			path = todoList;
+			sourceTree = "<group>";
+		};
+		3EDBAB23282BF8C300608680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E03435B27FC589100674437 /* Tasks.h */,
+				3E03435C27FC589100674437 /* Tasks.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EDBAB24282BF8C900608680 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				3E03434227FC3F9500674437 /* Main.storyboard */,
 				3E03434527FC3F9700674437 /* Assets.xcassets */,
 				3E03434727FC3F9700674437 /* LaunchScreen.storyboard */,
-				3E03434A27FC3F9700674437 /* Info.plist */,
-				3E03434B27FC3F9700674437 /* main.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EDBAB25282BF8CF00608680 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				3EDBAB2A282BF98A00608680 /* DoneScreen */,
+				3EDBAB29282BF93B00608680 /* ProgressScreen */,
+				3EDBAB28282BF92B00608680 /* DetailsScreen */,
+				3EDBAB27282BF92200608680 /* HomeScreen */,
+				3EDBAB26282BF91400608680 /* AddTaskScreen */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		3EDBAB26282BF91400608680 /* AddTaskScreen */ = {
+			isa = PBXGroup;
+			children = (
 				3E03435227FC468100674437 /* AddTasks.h */,
 				3E03435327FC468100674437 /* AddTasks.m */,
+			);
+			path = AddTaskScreen;
+			sourceTree = "<group>";
+		};
+		3EDBAB27282BF92200608680 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
 				3E03435827FC4B7C00674437 /* TableViewController.h */,
 				3E03435927FC4B7C00674437 /* TableViewController.m */,
-				3E03435B27FC589100674437 /* Tasks.h */,
-				3E03435C27FC589100674437 /* Tasks.m */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		3EDBAB28282BF92B00608680 /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
 				3EF39B8327FCDDEA00171347 /* DetailsViewController.h */,
 				3EF39B8427FCDDEA00171347 /* DetailsViewController.m */,
-				3EF39B8627FD0E3600171347 /* DoneTableViewController.h */,
-				3EF39B8727FD0E3600171347 /* DoneTableViewController.m */,
+				3EDBAB2F282BFA0500608680 /* ViewController.m */,
+				3EDBAB2E282BFA0500608680 /* ViewController.h */,
+			);
+			path = DetailsScreen;
+			sourceTree = "<group>";
+		};
+		3EDBAB29282BF93B00608680 /* ProgressScreen */ = {
+			isa = PBXGroup;
+			children = (
 				3EF39B8927FD0E4B00171347 /* ProgressTableViewController.h */,
 				3EF39B8A27FD0E4B00171347 /* ProgressTableViewController.m */,
 				3EABBA4C27FDC4B700FF8322 /* ProgressDetailsViewController.h */,
 				3EABBA4D27FDC4B700FF8322 /* ProgressDetailsViewController.m */,
 			);
-			path = todoList;
+			path = ProgressScreen;
+			sourceTree = "<group>";
+		};
+		3EDBAB2A282BF98A00608680 /* DoneScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3EF39B8627FD0E3600171347 /* DoneTableViewController.h */,
+				3EF39B8727FD0E3600171347 /* DoneTableViewController.m */,
+			);
+			path = DoneScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,11 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EF39B8B27FD0E4B00171347 /* ProgressTableViewController.m in Sources */,
-				3E03434127FC3F9500674437 /* ViewController.m in Sources */,
 				3E03435A27FC4B7C00674437 /* TableViewController.m in Sources */,
 				3EABBA4E27FDC4B700FF8322 /* ProgressDetailsViewController.m in Sources */,
 				3E03433B27FC3F9500674437 /* AppDelegate.m in Sources */,
 				3E03434C27FC3F9700674437 /* main.m in Sources */,
+				3EDBAB30282BFA0500608680 /* ViewController.m in Sources */,
 				3EF39B8827FD0E3600171347 /* DoneTableViewController.m in Sources */,
 				3E03433E27FC3F9500674437 /* SceneDelegate.m in Sources */,
 				3E03435427FC468100674437 /* AddTasks.m in Sources */,
